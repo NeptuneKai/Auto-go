@@ -3,7 +3,7 @@ import os
 
 from aligo import Aligo, Auth
 
-# auth = Auth()#首次运行打开
+auth = Auth() #首次运行打开
 ali = Aligo()
 
 
@@ -22,7 +22,7 @@ def searsh_file_list(ids, n=0):
 
 if __name__ == '__main__':
     print('go')
-    idd=input('id:')#61b774396e984928ee524d07b35e5dddd0393d64
+    idd=input('id:')
     with open('文件树.txt', 'w') as file_list:
         searsh_file_list(idd)
         file_list.close()
