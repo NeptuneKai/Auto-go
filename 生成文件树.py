@@ -17,7 +17,7 @@ def searsh_file_list(file, n=0):
                 pass
 
 if __name__ == '__main__':
-    with open('图灵学院文件树.txt', 'w') as file_list:
-        searsh_file_list('E:\Data\Video')
+    with open('文件树.txt', 'w') as file_list:
+        searsh_file_list('path') # 需要生产文件树的目录
         file_list.close()
-    os.system('图灵学院文件树.txt')
+    os.system('文件树.txt')
